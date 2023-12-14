@@ -21,6 +21,11 @@ public interface DishMapper {
     @Select("select count(id) from dish where category_id = #{categoryId}")
     Integer countByCategoryId(Long categoryId);
     /**
+     * 根据id查询菜品数量
+     * @param categoryId
+     * @return
+     */
+    /**
      * 新增菜品
      * @param dish
      */
@@ -74,4 +79,9 @@ public interface DishMapper {
      */
     @AutoFill(OperationType.UPDATE)
     void update(Dish dish);
+    /**
+     * 根据菜品Id查看status情况
+     * @param ids
+     * */
+    Integer isContainStop(List<Long> ids);
 }
