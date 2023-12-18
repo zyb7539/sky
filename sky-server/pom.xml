@@ -91,6 +91,7 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+        <!-- SpringCatche -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
@@ -125,5 +126,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
